@@ -1,0 +1,35 @@
+{
+  "name": "algorithms-combined-js",
+  "version": "1.0.0",
+  "description": "algorithms for combined",
+  "main": "libs/index.js",
+  "scripts": {
+    "build":"babel src -d libs",
+    "prepublish":"npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rawbin-/algorithms-combined-js.git"
+  },
+  "keywords": [
+    "algorithms",
+    "javascript",
+    "combination",
+    "arrangement"
+  ],
+  "author": "rawbin-",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rawbin-/algorithms-combined-js/issues"
+  },
+  "homepage": "https://github.com/rawbin-/algorithms-combined-js#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0"
+  },
+  "dependencies": {
+    "underscore": "^1.8.3"
+  }
+}
