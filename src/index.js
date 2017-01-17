@@ -1,5 +1,5 @@
 import _ from 'underscore'
-import Combination from './combination'
+import {getCombination} from './combination'
 
 const getArray = (arg) => {
     let arr;
@@ -27,7 +27,14 @@ const isArrangementFromCombination = (arrangement,combination) => {
 
 };
 
+
+export {
+    getCombination,
+    isArrangementFromCombination
+};
+
 export default {
-    ...Combination,
+    getCombination,
     isArrangementFromCombination
 }
+

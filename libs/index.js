@@ -3,16 +3,13 @@
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+exports.isArrangementFromCombination = exports.getCombination = undefined;
 
 var _underscore = require('underscore');
 
 var _underscore2 = _interopRequireDefault(_underscore);
 
 var _combination = require('./combination');
-
-var _combination2 = _interopRequireDefault(_combination);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -42,6 +39,9 @@ var isArrangementFromCombination = function isArrangementFromCombination(arrange
     return arrangementArr.join('') === combinationArr.join('');
 };
 
-exports.default = _extends({}, _combination2.default, {
+exports.getCombination = _combination.getCombination;
+exports.isArrangementFromCombination = isArrangementFromCombination;
+exports.default = {
+    getCombination: _combination.getCombination,
     isArrangementFromCombination: isArrangementFromCombination
-});
+};
