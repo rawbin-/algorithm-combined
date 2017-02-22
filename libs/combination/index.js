@@ -3,6 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.getCombination = undefined;
 
 var _underscore = require('underscore');
 
@@ -66,7 +67,7 @@ var generateCombinationMapping = function generateCombinationMapping() {
     return returnResult;
 };
 
-var generateCombination = function generateCombination(itemList, selectNum) {
+var getCombination = function getCombination(itemList, selectNum) {
     var targetList = void 0;
     if (_underscore2.default.isArray(itemList)) {
         targetList = itemList;
@@ -137,6 +138,7 @@ var generateCombination = function generateCombination(itemList, selectNum) {
     return combinations;
 };
 
+exports.getCombination = getCombination;
 exports.default = {
-    getCombination: generateCombination
+    getCombination: getCombination
 };

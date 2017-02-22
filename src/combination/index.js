@@ -48,7 +48,7 @@ const generateCombinationMapping = (totalNum = 0,selectNum = 0) => {
     return returnResult;
 };
 
-const generateCombination = (itemList,selectNum) => {
+const getCombination = (itemList,selectNum) => {
     let targetList;
     if(_.isArray(itemList)){
         targetList = itemList;
@@ -76,7 +76,10 @@ const generateCombination = (itemList,selectNum) => {
     return combinations;
 };
 
+export {
+    getCombination
+}
 
 export default {
-    getCombination:generateCombination
+    getCombination
 }
